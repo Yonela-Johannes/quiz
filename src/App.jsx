@@ -1,4 +1,5 @@
 import './App.css';
+import Trivia from "./Components/Trivia";
 import { useState } from 'react';
 
 function App() {
@@ -25,10 +26,10 @@ function App() {
     <div className="app">
       <div className="main">
         <div className="top">
-          <div className="timer">30</div>
+          <div className="timer"> 30 </div>
         </div>
         <div className="bottom">
-        question and answers
+        <Trivia />
         </div>
       </div>
       <div className="pyramid">
