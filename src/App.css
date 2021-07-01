@@ -72,6 +72,43 @@
   font-weight: 300;
   background: linear-gradient(rgb(3, 3, 44), rgb(32, 29, 29));
 }
+
+.answer:hover,
+.answer.active{
+  background: rgb(6, 6, 80);
+}
+
+.answer.correct{
+  animation: correct 3 ease forwards;
+}
+
+@keyframes correct{
+  0%,
+  22%,
+  42%{background: rgb(18, 18, 58);}
+
+  20%,
+  40%,
+  60%{background: rgb(18, 18, 58);}
+  
+  62%, 100% {background: rgb(56, 240, 0);}
+}
+.answer.wrong{
+  animation: correct 3 ease forwards;
+}
+
+@keyframes wrong{
+  0%,
+  22%,
+  42%{background: rgb(18, 18, 58);}
+
+  20%,
+  40%,
+  60%{background: rgb(18, 18, 58);}
+  
+  62%, 100% {background: rgb(231, 0, 0);}
+}
+
 .pyramid{
   width: 25%;
   display: flex;
