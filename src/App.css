@@ -94,7 +94,7 @@
   62%, 100% {background: rgb(56, 240, 0);}
 }
 .answer.wrong{
-  animation: correct 3 ease forwards;
+  animation: wrong 3 ease forwards;
 }
 
 @keyframes wrong{
@@ -143,3 +143,49 @@
   font-weight: 300;
 }
 
+.endText{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: rgb(70, 3, 3);
+}
+
+.start{
+  width: 250px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.startInput{
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.startInput:focus{
+  outline: none;
+}
+
+.startButton{
+  width: 70%;
+  padding: 5px;
+  font-weight: 600;
+}
+.startButton:hover{
+  color: green;
+}
