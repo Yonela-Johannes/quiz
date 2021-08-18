@@ -183,8 +183,6 @@ function App() {
   
   return (
     <div className="app">
-      {username ? (
-        <>
       <div className="main">
         {stop? <h1 className="endText">You earned: {earned}</h1> : (
         <>
@@ -193,7 +191,7 @@ function App() {
           </div>
           <div className="bottom">
           <Trivia data={data} 
-          setStop={setStop} 
+          setTimeOut={setTimeOut} 
           questionNumber={questionNumber}
           setQuestionNumber={setQuestionNumber}
           />
@@ -211,8 +209,6 @@ function App() {
         ))}
         </ul>
         </div>
-        </>
-      ) : <Start setUserName={setUserName} />}
     </div>
   );
 }

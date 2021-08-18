@@ -37,8 +37,11 @@ function Trivia({
         const handleClick = (a) => {
             setSelectedAnswer(a);
             setClassName("answer active");
-            delay(3000, () =>  setClassName(a.correct ? "answer correct" : "answer wrong"));
-            delay(5000, () => {
+            delay(3000, () =>  
+            setClassName(a.correct ? "answer correct" : "answer wrong")
+            );
+
+            delay(6000, () => {
                 if(a.correct){
                     correctAnswer();
                     delay(1000, ()=>{
@@ -48,9 +51,6 @@ function Trivia({
                 }else{                    
                     wrongAnswer();
                 }
-                delay(1000, ()=>{
-                    setStop(true);
-                })
             });
         };
     return (

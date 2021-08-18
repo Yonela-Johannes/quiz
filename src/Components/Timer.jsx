@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react'
+import React,{ useState, useEffect } from 'react'
 
 export default function Timer({ setStop, questionNumber }) {
     const [timer, setTimer] = useState(30);
